@@ -1,0 +1,462 @@
+[
+  {
+    "id": "dopamine-reward-circuit",
+    "title": "Dopamine Reward Circuit",
+    "category": "Motivation & Reward",
+    "brain_region": "Nucleus Accumbens / VTA",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "Dopamine is a chemical messenger that makes you feel good when you do something your brain considers rewarding — like eating, achieving a goal, or getting a like on social media. It motivates you to repeat those behaviours.",
+      "university": "The mesolimbic dopamine pathway projects from the ventral tegmental area (VTA) to the nucleus accumbens. Dopamine release encodes reward prediction errors: neurons fire more when a reward is better than expected, and less when it is worse. This signal drives operant conditioning and habit formation.",
+      "research": "Phasic dopamine bursts in the NAc core and shell differentially encode motivational salience versus hedonic value. D1-MSNs potentiate via AMPA receptor trafficking (LTP), while D2-MSNs mediate suppression of competing behaviours. Disruption of tonic dopamine tone, modulated by prefrontal glutamatergic input, underlies anhedonia in major depressive disorder and compulsive seeking in addiction."
+    },
+    "triggers": ["Achievement", "Anticipation of reward", "Novel stimuli", "Social validation", "Food", "Exercise"],
+    "effects": ["Motivation", "Pleasure", "Habit formation", "Addiction vulnerability", "Goal-directed behaviour"],
+    "real_life_examples": [
+      "The rush of excitement before opening a gift",
+      "Social media notification dopamine loops",
+      "Runner's high from sustained aerobic exercise",
+      "Compulsive gambling driven by variable reward schedules"
+    ],
+    "related_topics": ["reward-prediction-error", "intrinsic-motivation", "loss-aversion", "neuroplasticity"],
+    "tags": ["dopamine", "reward", "motivation", "addiction", "neurotransmitter"],
+    "map_position": { "x": 55, "y": 52 }
+  },
+  {
+    "id": "amygdala-fear-response",
+    "title": "Amygdala Fear Response",
+    "category": "Emotion Systems",
+    "brain_region": "Amygdala (Basolateral & Central)",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "The amygdala is your brain's alarm system. When it detects something threatening — a loud noise, a scary face, a dangerous situation — it triggers an instant fear response before your conscious mind has time to think.",
+      "university": "The basolateral amygdala (BLA) receives sensory input via the thalamus (fast route) and sensory cortex (slow route). It appraises emotional significance and projects to the central nucleus (CeA), which orchestrates fear expression: HPA axis activation, autonomic arousal, and behavioural freezing or flight. Fear conditioning depends on LTP at BLA synapses.",
+      "research": "Threat learning in the BLA involves NMDA receptor-dependent LTP at thalamo-amygdala synapses, with BDNF/TrkB signalling consolidating the engram. CeA-lateral division drives freeze responses via periaqueductal grey (PAG) projections; CeA-medial targets brainstem autonomic centres. Extinction requires active PFC-to-BLA inhibitory circuits; PTSD may reflect impaired infralimbic PFC extinction recall rather than failure of initial extinction learning."
+    },
+    "triggers": ["Perceived threat", "Loud/sudden sounds", "Fearful facial expressions", "Conditioned stimuli", "Social rejection"],
+    "effects": ["Fight-or-flight response", "Adrenaline surge", "Fear conditioning", "Memory consolidation of threat", "Anxiety"],
+    "real_life_examples": [
+      "Jumping at a sudden loud noise",
+      "Heart racing when nearly in a car accident",
+      "Phobias from single traumatic experiences",
+      "PTSD flashback triggered by a smell"
+    ],
+    "related_topics": ["cortisol-stress-response", "hippocampal-memory-consolidation", "prefrontal-executive-function", "serotonin-mood-regulation"],
+    "tags": ["fear", "amygdala", "threat", "emotion", "PTSD", "autonomic"],
+    "map_position": { "x": 40, "y": 45 }
+  },
+  {
+    "id": "prefrontal-executive-function",
+    "title": "Prefrontal Cortex Executive Function",
+    "category": "Brain Regions",
+    "brain_region": "Dorsolateral Prefrontal Cortex",
+    "difficulty": "University",
+    "summary": {
+      "beginner": "The prefrontal cortex is the rational, thoughtful part of your brain — your inner CEO. It helps you plan, control impulses, make decisions, and override emotional reactions from deeper brain areas.",
+      "university": "The dorsolateral PFC (dlPFC) supports working memory, cognitive flexibility, and response inhibition via persistent neural firing maintained by recurrent excitation. It exerts top-down control over subcortical structures including the amygdala and striatum. Developmental maturation continues into the mid-20s, explaining adolescent risk-taking.",
+      "research": "dlPFC layer III pyramidal neurons sustain working memory via NMDA-NR2B and D1 receptor co-activation; excessive norepinephrine or dopamine degrades signal-to-noise via α1-AR and D2R pathways. Transcranial magnetic stimulation (TMS) of dlPFC modulates depressive rumination by altering cortico-limbic connectivity. Theta oscillations (~6 Hz) couple dlPFC-hippocampal circuits during episodic retrieval and future planning."
+    },
+    "triggers": ["Novel problems", "Goal pursuit", "Conflict detection", "Emotional regulation demands", "Planning tasks"],
+    "effects": ["Impulse inhibition", "Decision quality", "Working memory capacity", "Emotional regulation", "Abstract reasoning"],
+    "real_life_examples": [
+      "Resisting dessert while on a diet",
+      "Planning a complex project step-by-step",
+      "Staying calm during an argument",
+      "Teenagers taking risks that adults avoid"
+    ],
+    "related_topics": ["working-memory", "amygdala-fear-response", "default-mode-network", "cognitive-dissonance"],
+    "tags": ["PFC", "executive function", "inhibition", "planning", "prefrontal"],
+    "map_position": { "x": 35, "y": 25 }
+  },
+  {
+    "id": "hippocampal-memory-consolidation",
+    "title": "Hippocampal Memory Consolidation",
+    "category": "Memory",
+    "brain_region": "Hippocampus (CA1, CA3, DG)",
+    "difficulty": "University",
+    "summary": {
+      "beginner": "The hippocampus is your brain's memory librarian. It takes short-term experiences and gradually transfers them into long-term storage across the rest of the brain — mostly while you sleep.",
+      "university": "The hippocampus performs rapid encoding of episodic memories via pattern separation (dentate gyrus) and pattern completion (CA3). During slow-wave sleep, sharp-wave ripples replay experience sequences, driving hippocampo-cortical dialogue that consolidates memories into neocortex via systems consolidation. LTP at CA3-CA1 Schaffer collateral synapses is a key cellular mechanism.",
+      "research": "Systems consolidation follows the Standard Consolidation Theory (SCT) and the Complementary Learning Systems (CLS) framework. Hippocampal-entorhinal grid/place cells form a cognitive map; theta-gamma phase-amplitude coupling coordinates information flow across CA subfields. Sleep spindle-slow oscillation coupling during NREM orchestrates neocortical engram formation; targeted memory reactivation (TMR) during sleep can selectively strengthen specific memories."
+    },
+    "triggers": ["Novel experiences", "Emotional arousal", "Sleep (consolidation)", "Repeated retrieval", "Spatial navigation"],
+    "effects": ["Long-term memory formation", "Spatial navigation", "Contextual recall", "Autobiographical memory", "Pattern recognition"],
+    "real_life_examples": [
+      "Remembering where you parked your car",
+      "Sleep improving exam performance",
+      "H.M.'s inability to form new memories after hippocampal removal",
+      "Déjà vu from pattern completion misfires"
+    ],
+    "related_topics": ["sleep-memory-consolidation", "working-memory", "neuroplasticity", "amygdala-fear-response"],
+    "tags": ["hippocampus", "memory", "consolidation", "sleep", "LTP", "episodic"],
+    "map_position": { "x": 50, "y": 38 }
+  },
+  {
+    "id": "confirmation-bias",
+    "title": "Confirmation Bias",
+    "category": "Cognitive Biases",
+    "brain_region": "Prefrontal Cortex / ACC",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "Confirmation bias is the tendency to search for, notice, and remember information that confirms what you already believe — and to ignore or discount information that challenges it.",
+      "university": "Confirmation bias operates across three stages: selective information search, biased interpretation of ambiguous evidence, and selective memory recall. The anterior cingulate cortex (ACC) mediates conflict detection but can be hijacked by motivated reasoning when beliefs carry high identity-relevance. It interacts with the backfire effect, where contradictory evidence can paradoxically strengthen prior beliefs.",
+      "research": "fMRI studies show that belief-incongruent information generates ACC conflict signals but also amygdala responses when beliefs are identity-laden, triggering motivated cognition circuits. Bayesian models frame confirmation bias as prior-weighting exceeding optimal Bayesian inference. Myside bias is robust across IQ levels, suggesting it reflects evolved social coalition maintenance rather than general cognitive capacity limits."
+    },
+    "triggers": ["Strong prior beliefs", "Identity-laden topics", "Information overload", "Emotionally charged subjects"],
+    "effects": ["Flawed reasoning", "Polarisation", "Reduced learning", "Perseveration of false beliefs", "Echo chambers"],
+    "real_life_examples": [
+      "Only reading news sources that match your politics",
+      "A manager who only notices evidence that their favourite employee is performing well",
+      "Investors holding losing stocks, seeking confirming data",
+      "Medical misdiagnosis from premature closure"
+    ],
+    "related_topics": ["cognitive-dissonance", "availability-heuristic", "anchoring-bias", "sunk-cost-fallacy"],
+    "tags": ["bias", "belief", "reasoning", "motivated cognition", "polarisation"],
+    "map_position": { "x": 65, "y": 28 }
+  },
+  {
+    "id": "anchoring-bias",
+    "title": "Anchoring Bias",
+    "category": "Cognitive Biases",
+    "brain_region": "Prefrontal Cortex / Striatum",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "When making estimates or decisions, your brain heavily relies on the first piece of information it receives — the 'anchor' — even when that number is completely arbitrary. Everything else is judged relative to it.",
+      "university": "Anchoring effects arise through two mechanisms: anchor-consistent knowledge activation (semantic priming) and insufficiently extreme adjustment from the anchor. The striatum encodes reference points and the PFC fails to adjust sufficiently even when the anchor's irrelevance is known. Numeric anchors distort price perception, negotiation outcomes, sentencing lengths, and medical estimates.",
+      "research": "Strack & Mussweiler's confirmatory hypothesis-testing model holds that anchors prime anchor-consistent information, increasing its accessibility. Neuroimaging implicates the caudate nucleus in reference-point coding and the vmPFC in value judgments relative to anchors. Correlational studies show anchoring is resistant to expertise in domains like real estate and legal sentencing, though slow analytical thinking (System 2) can partially debias anchoring effects."
+    },
+    "triggers": ["First numerical exposure", "Initial offer in negotiation", "Price tags", "Status quo reference points"],
+    "effects": ["Distorted estimates", "Negotiation disadvantage", "Pricing susceptibility", "Biased valuation"],
+    "real_life_examples": [
+      "MSRP pricing making a 'sale' price feel like a deal",
+      "Salary negotiation outcomes skewed by who names a number first",
+      "Arbitrary spin-the-wheel numbers influencing charity donations",
+      "Court sentences anchored by prosecution's initial demand"
+    ],
+    "related_topics": ["confirmation-bias", "loss-aversion", "framing-effect", "availability-heuristic"],
+    "tags": ["anchoring", "heuristics", "negotiation", "pricing", "decision"],
+    "map_position": { "x": 72, "y": 35 }
+  },
+  {
+    "id": "loss-aversion",
+    "title": "Loss Aversion",
+    "category": "Decision Making",
+    "brain_region": "Amygdala / Insula / vmPFC",
+    "difficulty": "University",
+    "summary": {
+      "beginner": "Losses feel about twice as painful as equivalent gains feel pleasurable. Losing £50 hurts more than finding £50 feels good. This asymmetry drives many irrational financial and personal decisions.",
+      "university": "Prospect Theory (Kahneman & Tversky, 1979) formalises loss aversion via an S-shaped value function steeper in the loss domain. The λ (loss aversion coefficient) averages ~2.25 empirically. Neural correlates include insula activation encoding anticipated losses and vmPFC encoding expected value; amygdala responses scale with loss magnitude. Loss aversion contributes to the disposition effect in investing and status quo bias.",
+      "research": "Neuroimaging reveals that striatal BOLD signals track gains while insula and amygdala responses predominate for losses; individual differences in λ correlate with insula-vmPFC functional connectivity. Recent meta-analyses question universal λ≈2 estimates, finding high inter-individual variance and context dependence. Myopic loss aversion (Benartzi & Thaler) explains why frequent portfolio evaluations reduce risk-taking — investors experience loss aversion more intensely at shorter evaluation horizons."
+    },
+    "triggers": ["Financial decisions", "Potential loss of status", "Health risk framing", "Investment portfolios"],
+    "effects": ["Risk aversion", "Status quo bias", "Sunk cost fallacy", "Irrational holding of losing investments"],
+    "real_life_examples": [
+      "Holding a losing stock to avoid realising the loss",
+      "Endowment effect: valuing owned items more than identical unowned ones",
+      "Insurance over-purchasing beyond rational expected value",
+      "Not quitting a bad job due to loss of seniority"
+    ],
+    "related_topics": ["anchoring-bias", "framing-effect", "sunk-cost-fallacy", "dopamine-reward-circuit"],
+    "tags": ["loss aversion", "prospect theory", "risk", "Kahneman", "economics"],
+    "map_position": { "x": 78, "y": 55 }
+  },
+  {
+    "id": "cognitive-dissonance",
+    "title": "Cognitive Dissonance",
+    "category": "Cognitive Biases",
+    "brain_region": "ACC / dPFC / Insula",
+    "difficulty": "University",
+    "summary": {
+      "beginner": "Cognitive dissonance is the uncomfortable mental tension you feel when you hold two contradictory beliefs, or when your actions contradict your values. Your brain works hard to resolve this discomfort — often by changing beliefs rather than behaviours.",
+      "university": "Festinger (1957) proposed that inconsistent cognitions generate psychological discomfort motivating attitude change. Neural signatures include ACC activation during conflict detection and insula activation encoding aversive arousal. Dissonance reduction strategies include attitude change, new consonant cognitions, trivialisation, or behavioural change — the easiest path rather than the most rational.",
+      "research": "fMRI paradigms (induced compliance, free-choice) reveal that ACC-anterior insula networks encode dissonance magnitude, predicting subsequent attitude shift. Individual differences in need for cognitive closure moderate dissonance tolerance. Predictive processing frameworks reframe dissonance as prediction error between self-model and behavioural output, with attitude change serving to minimise free energy (active inference). Neuroscience of self-affirmation shows vmPFC activation mediates dissonance buffering when self-integrity is affirmed."
+    },
+    "triggers": ["Behavioural-belief inconsistency", "Forced compliance", "Post-decision regret", "Moral transgressions"],
+    "effects": ["Attitude change", "Rationalisation", "Hypocrisy awareness", "Behaviour change (rare)", "Motivated reasoning"],
+    "real_life_examples": [
+      "Smokers convincing themselves 'it won't happen to me'",
+      "Post-purchase rationalisation of an expensive item",
+      "Cult members doubling down after failed prophecy",
+      "'Hazing creates loyalty' justification among fraternity members"
+    ],
+    "related_topics": ["confirmation-bias", "sunk-cost-fallacy", "prefrontal-executive-function", "intrinsic-motivation"],
+    "tags": ["dissonance", "attitude", "Festinger", "rationalisation", "self"],
+    "map_position": { "x": 60, "y": 20 }
+  },
+  {
+    "id": "working-memory",
+    "title": "Working Memory",
+    "category": "Memory",
+    "brain_region": "dlPFC / Parietal Cortex",
+    "difficulty": "University",
+    "summary": {
+      "beginner": "Working memory is your brain's mental scratch pad — the ability to hold a small amount of information in mind and actively work with it. It's what you use when doing mental arithmetic or holding a phone number in mind.",
+      "university": "Baddeley's multi-component model comprises a central executive (dlPFC), phonological loop (left hemisphere language areas), visuospatial sketchpad (right parietal/occipital), and episodic buffer. Capacity is limited to ~4 chunks (Cowan, 2001). Persistent neural firing in PFC layer III sustains representations; parietal areas maintain spatial information. Working memory capacity strongly predicts fluid intelligence and academic achievement.",
+      "research": "Sustained activity in PFC is maintained by NMDAr and D1 receptor interactions enabling reverberant circuits; high catecholamine states inverted-U curve working memory via α1/D2 receptor engagement. Theta-gamma coupling coordinates hippocampal-PFC information transfer during working memory; individual differences in theta power predict capacity limits. Transcranial alternating current stimulation (tACS) at theta frequency can causally enhance working memory in healthy participants."
+    },
+    "triggers": ["Complex task demands", "Multi-step instructions", "Mental arithmetic", "Reading comprehension", "Novel problems"],
+    "effects": ["Cognitive capacity", "Problem solving", "Reading comprehension", "Academic performance", "Fluid intelligence"],
+    "real_life_examples": [
+      "Holding a phone number in mind while dialling",
+      "Mental arithmetic (47 × 8)",
+      "Following multi-step verbal directions",
+      "Understanding complex nested sentences"
+    ],
+    "related_topics": ["hippocampal-memory-consolidation", "prefrontal-executive-function", "sleep-memory-consolidation", "default-mode-network"],
+    "tags": ["working memory", "PFC", "Baddeley", "capacity", "attention"],
+    "map_position": { "x": 30, "y": 32 }
+  },
+  {
+    "id": "cortisol-stress-response",
+    "title": "Cortisol & Stress Response",
+    "category": "Emotion Systems",
+    "brain_region": "HPA Axis / Adrenal Glands",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "Cortisol is the body's primary stress hormone. When your brain perceives a threat, it triggers a chain of signals that flood your body with cortisol, preparing you to fight or flee. Chronic stress keeps cortisol elevated, damaging health and cognition.",
+      "university": "The hypothalamic-pituitary-adrenal (HPA) axis orchestrates the stress response: hypothalamic CRH stimulates pituitary ACTH release, triggering adrenal cortisol secretion. Cortisol mobilises glucose, suppresses immune function, and enhances amygdala activity while impairing hippocampal memory encoding. Negative feedback via hippocampal and PFC glucocorticoid receptors normally terminates the response.",
+      "research": "Chronic HPA hyperactivation causes hippocampal CA3 dendritic atrophy via sustained glucocorticoid receptor signalling and excitotoxic glutamate release. Epigenetic modification of NR3C1 (glucocorticoid receptor gene) via early-life adversity programs HPA reactivity across the lifespan. Glucocorticoids modulate synaptic plasticity bidirectionally — acute stress enhances amygdala LTP while impairing hippocampal LTP — with GR/MR receptor ratio determining net effect."
+    },
+    "triggers": ["Perceived threat", "Chronic pressure", "Sleep deprivation", "Social evaluation", "Pain", "Uncertainty"],
+    "effects": ["Heightened alertness", "Immune suppression", "Memory impairment (chronic)", "Cardiovascular changes", "Anxiety"],
+    "real_life_examples": [
+      "Exam panic causing memory blanks",
+      "Chronic work stress leading to burnout",
+      "Public speaking triggering physical symptoms",
+      "Post-traumatic cortisol dysregulation"
+    ],
+    "related_topics": ["amygdala-fear-response", "serotonin-mood-regulation", "hippocampal-memory-consolidation", "sleep-memory-consolidation"],
+    "tags": ["cortisol", "stress", "HPA", "glucocorticoid", "trauma"],
+    "map_position": { "x": 45, "y": 60 }
+  },
+  {
+    "id": "default-mode-network",
+    "title": "Default Mode Network",
+    "category": "Brain Regions",
+    "brain_region": "mPFC / PCC / Angular Gyrus",
+    "difficulty": "Research",
+    "summary": {
+      "beginner": "The Default Mode Network (DMN) is the brain network most active when you're not focused on a task — during daydreaming, self-reflection, thinking about others, or imagining the future. It's your brain's 'idle' mode, and it's actually doing important work.",
+      "university": "The DMN comprises medial PFC, posterior cingulate cortex (PCC), angular gyrus, and hippocampal formation. It is anti-correlated with task-positive networks (frontoparietal). DMN supports autobiographical memory retrieval, future simulation, theory of mind, and self-referential processing. It is among the first networks disrupted in Alzheimer's disease.",
+      "research": "DMN functional connectivity emerges from correlated slow BOLD fluctuations (<0.1 Hz) and represents a core intrinsic connectivity network. The PCC acts as a hub integrating memory (hippocampus), self (mPFC), and spatial cognition (angular gyrus). DMN-salience network coupling during mind-wandering supports creative ideation; excess DMN activity relative to task-positive networks characterises depression and anxiety. Psychedelics transiently disrupt DMN functional connectivity, correlating with ego dissolution experiences."
+    },
+    "triggers": ["Rest and mind-wandering", "Future planning", "Social cognition", "Autobiographical recall", "Creative ideation"],
+    "effects": ["Self-referential thought", "Creativity", "Empathy", "Mental time travel", "Rumination (pathological)"],
+    "real_life_examples": [
+      "Daydreaming during a boring meeting",
+      "Suddenly solving a problem in the shower",
+      "Imagining a future conversation",
+      "Mind-wandering improving long-term creative insight"
+    ],
+    "related_topics": ["prefrontal-executive-function", "hippocampal-memory-consolidation", "working-memory", "intrinsic-motivation"],
+    "tags": ["DMN", "default mode", "mind-wandering", "self", "resting state"],
+    "map_position": { "x": 50, "y": 18 }
+  },
+  {
+    "id": "reward-prediction-error",
+    "title": "Reward Prediction Error",
+    "category": "Motivation & Reward",
+    "brain_region": "VTA / Substantia Nigra",
+    "difficulty": "Research",
+    "summary": {
+      "beginner": "Your brain doesn't just respond to rewards — it responds to surprises. When something good happens unexpectedly, you get a bigger dopamine rush. When expected rewards don't arrive, you feel worse than if nothing was promised. It's all about prediction.",
+      "university": "Reward prediction error (RPE) is the difference between received and expected reward: δ = r − V(s). Midbrain dopamine neurons in the VTA code RPE phasically: unexpected rewards cause firing bursts (positive RPE), expected rewards produce no change, and unexpected reward omissions cause pauses (negative RPE). This RPE signal drives temporal difference reinforcement learning, updating value estimates.",
+      "research": "Schultz et al. (1997) demonstrated that VTA dopamine neurons shift from responding to reward to responding to the conditioned stimulus as conditioning progresses — canonical RPE signature. Striatal dopamine tracks RPE while PFC encodes value estimates; OFC lesions disrupt credit assignment across temporal delays. Serotonin encodes negative RPE in some circuits; dopamine-serotonin interactions mediate patience and frustrative non-reward responses. Computational psychiatry models addiction as corrupted RPE signalling via sensitised D1-MSN pathways."
+    },
+    "triggers": ["Unexpected rewards", "Omission of expected reward", "Conditional stimuli", "Novel outcomes"],
+    "effects": ["Learning acceleration", "Habit strengthening", "Disappointment", "Superstitious behaviour", "Gambling reinforcement"],
+    "real_life_examples": [
+      "Variable ratio slot machine reinforcement maximising engagement",
+      "Disappointment when a usually delicious meal is average",
+      "Excitement from an unexpected compliment",
+      "Stock market surprises driving stronger emotional reactions than expected moves"
+    ],
+    "related_topics": ["dopamine-reward-circuit", "intrinsic-motivation", "loss-aversion", "anchoring-bias"],
+    "tags": ["RPE", "dopamine", "VTA", "Schultz", "reinforcement learning", "prediction"],
+    "map_position": { "x": 58, "y": 60 }
+  },
+  {
+    "id": "serotonin-mood-regulation",
+    "title": "Serotonin & Mood Regulation",
+    "category": "Emotion Systems",
+    "brain_region": "Raphe Nuclei / Limbic System",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "Serotonin is a neurotransmitter strongly linked to feelings of wellbeing, contentment, and social belonging. Low serotonin is associated with depression and anxiety, which is why most antidepressants target the serotonin system.",
+      "university": "Serotonergic neurons in the dorsal raphe nucleus project widely across the brain including limbic structures, PFC, and striatum. Serotonin modulates mood, appetite, sleep, and pain. SSRIs block the serotonin transporter (SERT), increasing synaptic serotonin. However, the monoamine deficiency hypothesis of depression is now considered oversimplified — serotonin's role is more complex, involving neural plasticity and network-level effects.",
+      "research": "Serotonin encodes aversive outcomes and punishment signals in certain circuits (dorsal raphe → basolateral amygdala), complementing dopamine's reward encoding. 5-HT2A receptor agonism by psychedelics increases cortical glutamate release and promotes neuroplasticity via BDNF/TrkB and mTOR signalling — the proposed mechanism of rapid antidepressant effects. Tryptophan depletion studies confirm causal links between serotonin and mood vulnerability in those with depression history, but not in naïve participants."
+    },
+    "triggers": ["Sunlight exposure", "Exercise", "Social bonding", "Tryptophan-rich foods", "Positive social status"],
+    "effects": ["Mood stability", "Impulse control", "Appetite regulation", "Sleep quality", "Social behaviour"],
+    "real_life_examples": [
+      "Winter depression (SAD) from reduced sunlight",
+      "Exercise improving mood via serotonin and endorphins",
+      "Antidepressant mechanisms of SSRIs",
+      "Psilocybin's mood effects via 5-HT2A agonism"
+    ],
+    "related_topics": ["cortisol-stress-response", "dopamine-reward-circuit", "amygdala-fear-response", "sleep-memory-consolidation"],
+    "tags": ["serotonin", "mood", "depression", "raphe", "SSRI", "5-HT"],
+    "map_position": { "x": 42, "y": 55 }
+  },
+  {
+    "id": "availability-heuristic",
+    "title": "Availability Heuristic",
+    "category": "Cognitive Biases",
+    "brain_region": "Prefrontal Cortex / Hippocampus",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "We judge how likely something is based on how easily examples come to mind. Plane crashes feel more dangerous than car accidents because they're more vivid and memorable — even though statistically cars are far more deadly.",
+      "university": "Tversky & Kahneman (1973) demonstrated that frequency and probability judgements are often based on ease of mental retrieval rather than actual statistical frequency. Media coverage, emotional vividness, and recency all inflate availability. This leads to systematic overestimation of dramatic but rare risks (terrorism, plane crashes) and underestimation of common but mundane risks (heart disease, car accidents).",
+      "research": "Availability operates through two distinct mechanisms: ease of retrieval (fluency) and content of retrieved examples. Schwarz et al. (1991) showed that asking for 12 reasons to be assertive reduced perceived assertiveness — high retrieval effort signals low frequency. fMRI implicates prefrontal-hippocampal circuitry in fluency-based confidence judgements. Availability cascades (Kuran & Sunstein) describe how media amplification creates self-reinforcing cycles of perceived risk."
+    },
+    "triggers": ["Vivid media coverage", "Recent personal experience", "Emotionally charged events", "Ease of recall"],
+    "effects": ["Risk misperception", "Policy misjudgement", "Fear of rare events", "Neglect of base rates"],
+    "real_life_examples": [
+      "Fearing flying after seeing a plane crash in the news",
+      "Parents over-restricting children after high-profile abduction cases",
+      "Overestimating crime rates after watching true crime content",
+      "COVID risk perception varying with local case visibility"
+    ],
+    "related_topics": ["confirmation-bias", "anchoring-bias", "framing-effect", "cognitive-dissonance"],
+    "tags": ["availability", "heuristic", "risk perception", "media", "Kahneman"],
+    "map_position": { "x": 68, "y": 42 }
+  },
+  {
+    "id": "mirror-neuron-empathy",
+    "title": "Mirror Neurons & Empathy",
+    "category": "Brain Regions",
+    "brain_region": "Inferior Frontal Gyrus / Premotor Cortex",
+    "difficulty": "University",
+    "summary": {
+      "beginner": "Mirror neurons are brain cells that fire both when you perform an action and when you observe someone else perform it. They're thought to be the neural basis of imitation, empathy, and understanding others' intentions.",
+      "university": "Originally discovered in macaque premotor cortex (area F5), mirror neurons respond to both observed and executed goal-directed actions. In humans, the putative mirror neuron system (MNS) spans inferior frontal gyrus (IFG), inferior parietal lobule (IPL), and premotor cortex. fMRI and EEG mu rhythm suppression provide indirect evidence. The MNS is proposed to underlie action understanding, imitation, and affective empathy.",
+      "research": "Direct single-unit recordings in human neurosurgical patients confirm mirror neuron-like responses in the hippocampus and cingulate cortex. However, the 'broken mirror' hypothesis of autism lacks robust empirical support — autistic individuals show MNS activity comparable to controls in naturalistic conditions. Current consensus favours an associative learning origin for MNS via Hebbian plasticity at cortico-spinal synapses rather than a dedicated mirror system. Theta-band EEG oscillations index empathic accuracy more reliably than mu suppression."
+    },
+    "triggers": ["Observing actions", "Emotional contagion", "Social observation", "Imitation", "Shared pain"],
+    "effects": ["Empathy", "Imitation learning", "Action understanding", "Emotional contagion", "Social bonding"],
+    "real_life_examples": [
+      "Wincing when watching someone stub their toe",
+      "Yawning when others yawn",
+      "Babies imitating facial expressions within hours of birth",
+      "Feeling secondhand embarrassment for others"
+    ],
+    "related_topics": ["amygdala-fear-response", "serotonin-mood-regulation", "prefrontal-executive-function", "cognitive-dissonance"],
+    "tags": ["mirror neurons", "empathy", "imitation", "social cognition", "MNS"],
+    "map_position": { "x": 25, "y": 40 }
+  },
+  {
+    "id": "framing-effect",
+    "title": "Framing Effect",
+    "category": "Decision Making",
+    "brain_region": "vmPFC / Amygdala / Insula",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "Identical information presented differently leads to different decisions. People prefer '90% fat-free yoghurt' over '10% fat' yoghurt, even though they're the same. The way a choice is framed — not just its content — powerfully shapes decisions.",
+      "university": "Kahneman & Tversky's Asian Disease Problem is the canonical demonstration: equivalent outcomes are preferred or avoided depending on gain vs. loss framing. Risk aversion predominates under gain frames; risk-seeking under loss frames. This is consistent with Prospect Theory's value function. Neural substrates include vmPFC tracking expected value and amygdala/insula providing affective valence cues that frame-dependent decisions rely on.",
+      "research": "Framing effects are diminished by damage to vmPFC (patients become frame-independent) and enhanced by amygdala hyperactivation, confirming dual-process neural architecture. Attribute framing (90% fat-free vs. 10% fat) and goal framing (save money vs. avoid losing money) have distinct neural signatures. Regulatory focus theory predicts promotion-focused individuals are more loss-frame sensitive; individual differences in trait anxiety amplify framing susceptibility via insula reactivity."
+    },
+    "triggers": ["Marketing language", "Medical risk communication", "Political messaging", "News framing"],
+    "effects": ["Risk preference reversal", "Consumer behaviour", "Policy adoption", "Medical decision-making"],
+    "real_life_examples": [
+      "'95% survival rate' vs. '5% mortality rate' — same data, different reactions",
+      "Ground beef '75% lean' vs. '25% fat'",
+      "Organ donation opt-in vs. opt-out default framing",
+      "Negotiation gains vs. losses framing in diplomacy"
+    ],
+    "related_topics": ["loss-aversion", "anchoring-bias", "availability-heuristic", "sunk-cost-fallacy"],
+    "tags": ["framing", "prospect theory", "risk", "marketing", "decision"],
+    "map_position": { "x": 75, "y": 48 }
+  },
+  {
+    "id": "neuroplasticity",
+    "title": "Neuroplasticity",
+    "category": "Brain Regions",
+    "brain_region": "Cortex-wide / Hippocampus",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "The brain can physically change and rewire itself in response to experience, learning, and environment. New connections form, existing ones strengthen or weaken, and even new neurons can grow — you're not stuck with the brain you were born with.",
+      "university": "Neuroplasticity encompasses synaptic plasticity (LTP/LTD), structural plasticity (dendritic spine remodelling, axonal sprouting), and adult neurogenesis (dentate gyrus, olfactory bulb). Hebb's rule — 'neurons that fire together wire together' — describes associative synaptic strengthening. Critical periods represent windows of heightened plasticity during development; GABA system maturation closes them.",
+      "research": "BDNF/TrkB signalling is a master regulator of synaptic and structural plasticity; exercise, environmental enrichment, and antidepressants all converge on BDNF upregulation. Arc (activity-regulated cytoskeleton-associated protein) is an immediate early gene essential for LTP maintenance and memory consolidation. Transcranial magnetic stimulation and pharmacological interventions (SSRIs, ketamine) can reopen critical period-like plasticity in adult cortex — exploited in amblyopia and PTSD treatment."
+    },
+    "triggers": ["Learning new skills", "Repeated experience", "Exercise", "Meditation", "Injury recovery", "Enriched environment"],
+    "effects": ["Skill acquisition", "Memory formation", "Recovery from brain injury", "Habit formation", "Expertise development"],
+    "real_life_examples": [
+      "London taxi drivers having enlarged hippocampi",
+      "Musicians having expanded motor cortex for finger movements",
+      "Stroke patients regaining function through rehabilitation",
+      "Meditation measurably increasing grey matter density"
+    ],
+    "related_topics": ["hippocampal-memory-consolidation", "sleep-memory-consolidation", "dopamine-reward-circuit", "working-memory"],
+    "tags": ["plasticity", "LTP", "BDNF", "learning", "Hebb", "neurogenesis"],
+    "map_position": { "x": 32, "y": 18 }
+  },
+  {
+    "id": "intrinsic-motivation",
+    "title": "Intrinsic Motivation",
+    "category": "Motivation & Reward",
+    "brain_region": "Striatum / mPFC",
+    "difficulty": "University",
+    "summary": {
+      "beginner": "Intrinsic motivation means doing something because it's inherently satisfying — because you enjoy it, find it meaningful, or find it challenging in a good way. It's more durable than doing things for external rewards like money or grades.",
+      "university": "Self-Determination Theory (Deci & Ryan) proposes three basic psychological needs underlying intrinsic motivation: autonomy, competence, and relatedness. The overjustification effect shows that introducing extrinsic rewards for intrinsically motivated activities undermines subsequent intrinsic motivation by shifting perceived locus of causality. Neural basis involves striatal dopamine and mPFC encoding of self-determined versus externally determined choices.",
+      "research": "fMRI contrasts of autonomous versus controlled motivation show mPFC and posterior parietal engagement for autonomous choices, with striatal activation tied to competence feedback. Dopamine tracks subjective value in self-generated versus reward-directed behaviour differently — VTA-to-NAc projections encode incentive salience while VTA-to-PFC projections encode intrinsic value and cognitive engagement. Mindset interventions (growth vs. fixed mindset; Dweck) may operate by modulating the intrinsic value of effortful learning processes."
+    },
+    "triggers": ["Perceived autonomy", "Sense of competence", "Social connectedness", "Personal meaning", "Flow states"],
+    "effects": ["Sustained engagement", "Creativity", "Higher quality work", "Psychological wellbeing", "Resilience"],
+    "real_life_examples": [
+      "Losing track of time when absorbed in a creative project",
+      "Children stopping a hobby after getting paid for it",
+      "Autonomy at work predicting employee retention better than salary",
+      "Gamification backfiring by crowding out intrinsic interest"
+    ],
+    "related_topics": ["dopamine-reward-circuit", "reward-prediction-error", "default-mode-network", "cognitive-dissonance"],
+    "tags": ["motivation", "autonomy", "Deci Ryan", "overjustification", "SDT"],
+    "map_position": { "x": 62, "y": 65 }
+  },
+  {
+    "id": "sleep-memory-consolidation",
+    "title": "Sleep & Memory Consolidation",
+    "category": "Memory",
+    "brain_region": "Hippocampus / Neocortex / Thalamus",
+    "difficulty": "University",
+    "summary": {
+      "beginner": "Sleep isn't passive rest — it's an active memory processing period. During slow-wave and REM sleep, your brain replays the day's experiences, strengthens important memories, and clears out the rest. Skipping sleep is one of the most effective ways to impair learning.",
+      "university": "Systems consolidation during sleep involves hippocampal sharp-wave ripples (SWRs) during NREM triggering neocortical slow oscillations (~0.75 Hz) and thalamic sleep spindles (12-15 Hz) in coordinated sequences. This coupling transfers memory traces from hippocampus to distributed neocortical storage. REM sleep strengthens emotional memories and supports procedural abstraction. Sleep deprivation impairs hippocampal-dependent encoding the following day.",
+      "research": "The hippocampal-neocortical dialogue follows a two-stage model: hippocampal encoding → slow-wave replay → neocortical consolidation. Closed-loop auditory stimulation phase-locked to slow oscillations (targeted memory reactivation, TMR) selectively enhances cueing. Optogenetic replay of fear memories during NREM can strengthen or weaken fear expression depending on concurrent manipulation of valence circuits. Slow oscillation up-state dynamics are disrupted in ageing and Alzheimer's disease, contributing to memory decline."
+    },
+    "triggers": ["Sleep onset", "NREM slow-wave sleep", "REM sleep", "Post-learning sleep", "Napping"],
+    "effects": ["Memory consolidation", "Emotional processing", "Procedural learning", "Creative insight", "Immune function"],
+    "real_life_examples": [
+      "Sleeping on a problem and waking with a solution",
+      "All-night studying backfiring on exam performance",
+      "Napping after learning improving retention",
+      "PTSD nightmares as maladaptive fear memory consolidation"
+    ],
+    "related_topics": ["hippocampal-memory-consolidation", "cortisol-stress-response", "working-memory", "default-mode-network"],
+    "tags": ["sleep", "consolidation", "REM", "NREM", "spindles", "ripples"],
+    "map_position": { "x": 48, "y": 72 }
+  },
+  {
+    "id": "sunk-cost-fallacy",
+    "title": "Sunk Cost Fallacy",
+    "category": "Decision Making",
+    "brain_region": "vmPFC / OFC / ACC",
+    "difficulty": "Beginner",
+    "summary": {
+      "beginner": "The sunk cost fallacy is continuing a failing course of action because of resources already invested — time, money, effort — even when stopping would be the rational choice. You finish a bad movie because you paid for the ticket.",
+      "university": "Rational decision theory prescribes ignoring sunk (unrecoverable) costs and basing choices only on future costs and benefits. The Concorde fallacy (escalation of commitment) describes how past investment inflates perceived future value and commitment. Neural correlates implicate the vmPFC in subjective value integration and the ACC in computing switching costs. Loss aversion amplifies sunk cost effects by making 'wasting' prior investment feel like a loss.",
+      "research": "Individual differences in sunk cost susceptibility correlate with vmPFC volume and functional connectivity with the ACC. Computational models frame sunk cost as a failure of Bayesian updating — prior investment serves as unwarranted evidence for future success. Neuroscience of regret (OFC activation to counterfactual outcomes) interacts with sunk cost: anticipated regret from 'giving up' inflates continuation value. Sunk cost effects are attenuated in populations with damage to vmPFC and in children before age 5, suggesting its developmental acquisition."
+    },
+    "triggers": ["Prior investment (money, time, effort)", "Proximity to goal", "Public commitment", "Identity investment"],
+    "effects": ["Irrational continuation", "Escalation of commitment", "Financial loss", "Opportunity cost blindness"],
+    "real_life_examples": [
+      "Finishing an awful book because you've read half",
+      "Staying in a bad relationship due to years already invested",
+      "Governments continuing failed military campaigns",
+      "Entrepreneurs refusing to pivot despite market evidence"
+    ],
+    "related_topics": ["loss-aversion", "cognitive-dissonance", "framing-effect", "confirmation-bias"],
+    "tags": ["sunk cost", "escalation", "commitment", "rational choice", "fallacy"],
+    "map_position": { "x": 82, "y": 62 }
+  }
+]
