@@ -20,14 +20,28 @@ interface BrainRegion {
 const W = 600;
 const H = 450;
 
+// Top-down anatomical brain silhouette
+const BRAIN_PATH =
+  'M 300 32 C 268 30 230 38 196 53 C 160 70 126 96 104 128 ' +
+  'C 82 152 74 184 74 216 C 74 252 86 284 108 312 ' +
+  'C 130 340 165 360 208 372 C 240 380 270 384 300 385 ' +
+  'C 330 384 360 380 392 372 C 435 360 470 340 492 312 ' +
+  'C 514 284 526 252 526 216 C 526 184 518 152 498 128 ' +
+  'C 476 96 442 70 404 53 C 370 38 332 30 300 32 Z';
+
+const CEREBELLUM_PATH =
+  'M 215 365 C 218 352 248 342 300 340 C 352 342 382 352 385 365 ' +
+  'C 392 380 388 404 370 420 C 352 434 328 440 300 440 ' +
+  'C 272 440 248 434 230 420 C 212 404 208 380 215 365 Z';
+
 const REGIONS: BrainRegion[] = [
   {
     id: 'prefrontal',
     label: 'Prefrontal Cortex',
     conceptIds: ['prefrontal-executive-function', 'working-memory', 'default-mode-network'],
     shape: 'path',
-    d: 'M 200 60 C 200 30 240 18 300 18 C 360 18 400 30 400 60 C 420 75 430 95 428 115 C 420 130 390 140 350 145 L 300 148 L 250 145 C 210 140 180 130 172 115 C 170 95 180 75 200 60 Z',
-    labelPos: { x: 300, y: 85 },
+    d: 'M 300 32 C 268 30 230 38 196 53 C 160 70 126 96 104 128 C 86 145 78 165 76 175 L 524 175 C 522 165 514 145 496 128 C 474 96 440 70 404 53 C 370 38 332 30 300 32 Z',
+    labelPos: { x: 300, y: 100 },
     color: 'rgba(99,102,241,0.22)',
     glowColor: '#6366f1',
   },
@@ -36,8 +50,8 @@ const REGIONS: BrainRegion[] = [
     label: 'Parietal Cortex',
     conceptIds: ['working-memory', 'mirror-neuron-empathy'],
     shape: 'path',
-    d: 'M 180 150 C 185 138 200 133 250 130 L 300 128 L 350 130 C 400 133 415 138 420 150 C 430 170 432 200 430 225 C 420 230 390 235 350 237 L 300 238 L 250 237 C 210 235 180 230 170 225 C 168 200 170 170 180 150 Z',
-    labelPos: { x: 300, y: 185 },
+    d: 'M 76 175 L 524 175 C 526 205 526 238 520 268 C 515 290 506 310 494 326 L 106 326 C 94 310 85 290 80 268 C 74 238 74 205 76 175 Z',
+    labelPos: { x: 300, y: 250 },
     color: 'rgba(6,182,212,0.18)',
     glowColor: '#06b6d4',
   },
@@ -45,9 +59,9 @@ const REGIONS: BrainRegion[] = [
     id: 'hippocampus-l',
     label: 'Hippocampus (L)',
     conceptIds: ['hippocampal-memory-consolidation', 'sleep-memory-consolidation'],
-    shape: 'path',
-    d: 'M 175 230 C 165 222 158 210 158 200 C 158 185 168 172 182 168 C 195 165 210 170 218 180 C 225 190 224 205 218 215 C 210 225 195 232 180 232 Z',
-    labelPos: { x: 190, y: 198 },
+    shape: 'ellipse',
+    cx: 192, cy: 250, rx: 34, ry: 20,
+    labelPos: { x: 192, y: 250 },
     color: 'rgba(16,185,129,0.2)',
     glowColor: '#10b981',
   },
@@ -55,9 +69,9 @@ const REGIONS: BrainRegion[] = [
     id: 'hippocampus-r',
     label: 'Hippocampus (R)',
     conceptIds: ['hippocampal-memory-consolidation', 'sleep-memory-consolidation'],
-    shape: 'path',
-    d: 'M 425 230 C 435 222 442 210 442 200 C 442 185 432 172 418 168 C 405 165 390 170 382 180 C 375 190 376 205 382 215 C 390 225 405 232 420 232 Z',
-    labelPos: { x: 412, y: 198 },
+    shape: 'ellipse',
+    cx: 408, cy: 250, rx: 34, ry: 20,
+    labelPos: { x: 408, y: 250 },
     color: 'rgba(16,185,129,0.2)',
     glowColor: '#10b981',
   },
@@ -66,8 +80,8 @@ const REGIONS: BrainRegion[] = [
     label: 'Amygdala (L)',
     conceptIds: ['amygdala-fear-response', 'cortisol-stress-response'],
     shape: 'ellipse',
-    cx: 205, cy: 260, rx: 28, ry: 20,
-    labelPos: { x: 205, y: 260 },
+    cx: 188, cy: 285, rx: 26, ry: 18,
+    labelPos: { x: 188, y: 285 },
     color: 'rgba(244,63,94,0.25)',
     glowColor: '#f43f5e',
   },
@@ -76,8 +90,8 @@ const REGIONS: BrainRegion[] = [
     label: 'Amygdala (R)',
     conceptIds: ['amygdala-fear-response', 'cortisol-stress-response'],
     shape: 'ellipse',
-    cx: 395, cy: 260, rx: 28, ry: 20,
-    labelPos: { x: 395, y: 260 },
+    cx: 412, cy: 285, rx: 26, ry: 18,
+    labelPos: { x: 412, y: 285 },
     color: 'rgba(244,63,94,0.25)',
     glowColor: '#f43f5e',
   },
@@ -86,8 +100,8 @@ const REGIONS: BrainRegion[] = [
     label: 'Nucleus Accumbens',
     conceptIds: ['dopamine-reward-circuit', 'reward-prediction-error', 'intrinsic-motivation'],
     shape: 'ellipse',
-    cx: 300, cy: 270, rx: 38, ry: 26,
-    labelPos: { x: 300, y: 270 },
+    cx: 300, cy: 310, rx: 42, ry: 26,
+    labelPos: { x: 300, y: 310 },
     color: 'rgba(245,158,11,0.22)',
     glowColor: '#f59e0b',
   },
@@ -96,8 +110,8 @@ const REGIONS: BrainRegion[] = [
     label: 'Cerebellum',
     conceptIds: ['neuroplasticity'],
     shape: 'path',
-    d: 'M 220 340 C 225 315 255 300 300 298 C 345 300 375 315 380 340 C 385 360 375 385 355 398 C 335 410 310 415 300 415 C 290 415 265 410 245 398 C 225 385 215 360 220 340 Z',
-    labelPos: { x: 300, y: 358 },
+    d: CEREBELLUM_PATH,
+    labelPos: { x: 300, y: 400 },
     color: 'rgba(139,92,246,0.2)',
     glowColor: '#8b5cf6',
   },
@@ -257,7 +271,6 @@ export default function BrainMap() {
 
   const charControls = useAnimation();
   const frameIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  // keep charPos accessible in keydown handler without re-registering
   const charPosRef = useRef(charPos);
   useEffect(() => { charPosRef.current = charPos; }, [charPos]);
 
@@ -345,7 +358,6 @@ export default function BrainMap() {
       });
       setCharPos({ x: nx, y: ny });
 
-      // Proximity check
       for (const r of REGIONS) {
         const d = Math.hypot(nx - r.labelPos.x, ny - r.labelPos.y);
         if (d < 40) {
@@ -374,7 +386,6 @@ export default function BrainMap() {
     const px = (concept.map_position.x / 100) * W;
     const py = (concept.map_position.y / 100) * H;
     walkTo(px, py);
-  // walkTo is stable (useCallback with stable deps), pendingWalkTarget is the real trigger
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pendingWalkTarget]);
 
@@ -393,13 +404,19 @@ export default function BrainMap() {
           borderRadius: '16px',
           overflow: 'hidden',
           border: '1px solid rgba(99,102,241,0.14)',
-          background: '#05050e',
+          background: '#0a0a0f',
           outline: 'none',
         }}
         tabIndex={0}
       >
         <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: 'absolute', inset: 0 }}>
           <defs>
+            {/* Clip path for lobe zone fills */}
+            <clipPath id="brain-clip">
+              <path d={BRAIN_PATH} />
+            </clipPath>
+
+            {/* Glow filters for each region */}
             {REGIONS.map((r) => (
               <filter key={r.id} id={`glow-${r.id}`} x="-60%" y="-60%" width="220%" height="220%">
                 <feGaussianBlur stdDeviation="7" result="blur" />
@@ -408,20 +425,92 @@ export default function BrainMap() {
             ))}
           </defs>
 
-          {/* Outer brain silhouette */}
-          <ellipse cx={300} cy={225} rx={242} ry={202} fill="#08081a" stroke="#181830" strokeWidth={1.5} />
-
-          {/* Anatomical sulci lines */}
-          <g stroke="#111128" strokeWidth={1} fill="none" opacity={0.8}>
-            <path d="M 300 28 C 295 90 298 150 300 210 C 302 270 298 330 300 415" />
-            <path d="M 195 125 C 218 148 242 168 258 198 C 268 220 270 248 267 272" />
-            <path d="M 405 125 C 382 148 358 168 342 198 C 332 220 330 248 333 272" />
-            <path d="M 172 188 C 198 193 228 190 258 186" />
-            <path d="M 428 188 C 402 193 372 190 342 186" />
-            <path d="M 230 300 C 255 295 278 292 300 292 C 322 292 345 295 370 300" />
+          {/* ── Cerebellum (behind main brain) ── */}
+          <path d={CEREBELLUM_PATH} fill="#090910" stroke="#1e2a3a" strokeWidth={1.5} />
+          {/* Cerebellum fold lines */}
+          <g stroke="#152030" strokeWidth={0.8} fill="none">
+            <path d="M 244 352 C 264 348 282 346 300 345 C 318 346 336 348 356 352" />
+            <path d="M 236 364 C 258 360 278 358 300 357 C 322 358 342 360 364 364" />
+            <path d="M 228 376 C 252 372 275 370 300 369 C 325 370 348 372 372 376" />
+            <path d="M 225 388 C 250 384 275 382 300 381 C 325 382 350 384 375 388" />
+            <path d="M 228 400 C 252 397 276 395 300 394 C 324 395 348 397 372 400" />
           </g>
 
-          {/* Regions */}
+          {/* ── Brain stem ── */}
+          <path d="M 287 430 Q 284 442 300 444 Q 316 442 313 430 Z" fill="#0a0a14" stroke="#1e2a3a" strokeWidth={1} />
+
+          {/* ── Main brain base fill ── */}
+          <path d={BRAIN_PATH} fill="#090916" />
+
+          {/* ── Lobe zone tints (clipped to brain shape) ── */}
+          <g clipPath="url(#brain-clip)">
+            {/* Frontal lobe — dark blue */}
+            <rect x="0" y="0" width="600" height="168" fill="#0d1117" opacity={0.9} />
+            {/* Temporal lobe left — dark teal */}
+            <rect x="0" y="112" width="205" height="210" fill="#0a1212" opacity={0.85} />
+            {/* Temporal lobe right — dark teal */}
+            <rect x="395" y="112" width="205" height="210" fill="#0a1212" opacity={0.85} />
+            {/* Parietal lobe — dark purple */}
+            <rect x="205" y="168" width="190" height="155" fill="#0d0d1a" opacity={0.9} />
+            {/* Occipital lobe — dark green */}
+            <rect x="0" y="323" width="600" height="100" fill="#0a110a" opacity={0.9} />
+          </g>
+
+          {/* ── Sulci fold lines ── */}
+          <g stroke="#152030" strokeWidth={0.8} fill="none">
+            {/* L superior frontal sulcus */}
+            <path d="M 195 46 C 192 75 188 108 188 138 C 188 155 190 165 194 172" />
+            {/* R superior frontal sulcus */}
+            <path d="M 405 46 C 408 75 412 108 412 138 C 412 155 410 165 406 172" />
+            {/* L inferior frontal sulcus */}
+            <path d="M 120 110 C 138 128 152 148 160 168 C 165 178 168 188 170 198" />
+            {/* R inferior frontal sulcus */}
+            <path d="M 480 110 C 462 128 448 148 440 168 C 435 178 432 188 430 198" />
+            {/* L central sulcus */}
+            <path d="M 98 168 C 128 174 160 177 198 176 C 235 175 262 173 295 172" />
+            {/* R central sulcus */}
+            <path d="M 502 168 C 472 174 440 177 402 176 C 365 175 338 173 305 172" />
+            {/* L postcentral sulcus */}
+            <path d="M 90 198 C 124 205 160 208 198 208" />
+            {/* R postcentral sulcus */}
+            <path d="M 510 198 C 476 205 440 208 402 208" />
+            {/* L intraparietal sulcus */}
+            <path d="M 162 212 C 166 240 170 268 170 292" />
+            {/* R intraparietal sulcus */}
+            <path d="M 438 212 C 434 240 430 268 430 292" />
+            {/* L parieto-occipital sulcus */}
+            <path d="M 100 312 C 136 316 172 318 215 318" />
+            {/* R parieto-occipital sulcus */}
+            <path d="M 500 312 C 464 316 428 318 385 318" />
+            {/* L Sylvian fissure */}
+            <path d="M 108 130 C 130 158 148 188 155 220 C 158 238 158 256 156 272" />
+            {/* R Sylvian fissure */}
+            <path d="M 492 130 C 470 158 452 188 445 220 C 442 238 442 256 444 272" />
+            {/* L occipital sulcus */}
+            <path d="M 116 328 C 148 335 185 340 228 344" />
+            {/* R occipital sulcus */}
+            <path d="M 484 328 C 452 335 415 340 372 344" />
+            {/* L frontal gyrus */}
+            <path d="M 248 72 C 258 88 265 105 268 125 C 270 138 270 152 270 165" />
+            {/* R frontal gyrus */}
+            <path d="M 352 72 C 342 88 335 105 332 125 C 330 138 330 152 330 165" />
+            {/* Transverse occipital sulcus */}
+            <path d="M 200 355 C 238 360 268 363 300 364 C 332 363 362 360 400 355" />
+            {/* Supplementary motor area arc */}
+            <path d="M 270 42 C 274 62 278 88 280 118 C 281 135 281 152 280 165" />
+            <path d="M 330 42 C 326 62 322 88 320 118 C 319 135 319 152 320 165" />
+          </g>
+
+          {/* ── Longitudinal fissure (center line) ── */}
+          <path
+            d="M 300 32 C 300 80 300 160 300 250 C 300 310 300 348 300 380"
+            stroke="#1e2a3a" strokeWidth={1.2} fill="none"
+          />
+
+          {/* ── Brain outline (on top of fills) ── */}
+          <path d={BRAIN_PATH} fill="none" stroke="#1e2a3a" strokeWidth={1.5} />
+
+          {/* ── Clickable regions ── */}
           {REGIONS.map((region) => {
             const hovered = hoveredRegion === region.id;
             const active = activeRegion === region.id;
@@ -456,7 +545,7 @@ export default function BrainMap() {
             return <g key={region.id}>{shape}</g>;
           })}
 
-          {/* Concept dots */}
+          {/* ── Concept dots ── */}
           {visible.map((concept) => {
             const cx = (concept.map_position.x / 100) * W;
             const cy = (concept.map_position.y / 100) * H;
@@ -478,7 +567,7 @@ export default function BrainMap() {
             );
           })}
 
-          {/* Tooltips */}
+          {/* ── Tooltips ── */}
           <AnimatePresence>
             {hoveredRegion && (() => {
               const r = REGIONS.find((rg) => rg.id === hoveredRegion)!;

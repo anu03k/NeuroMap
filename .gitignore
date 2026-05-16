@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code project memory (local AI assistant config — not for version control)
+.claude/

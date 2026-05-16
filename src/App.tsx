@@ -1,6 +1,7 @@
 import NavMenu from './components/NavMenu';
 import BrainMap from './components/BrainMap';
 import InfoPanel from './components/InfoPanel';
+import DailyFact from './components/DailyFact';
 import { useConceptStore } from './hooks/useConceptStore';
 import './index.css';
 
@@ -29,7 +30,7 @@ export default function App() {
           overflow: 'hidden',
         }}
       >
-        {/* BrainMap — left/main area */}
+        {/* BrainMap + FactPanel — left/main area */}
         <div
           style={{
             flex: selectedConcept ? '1 1 60%' : '1 1 100%',
@@ -37,9 +38,15 @@ export default function App() {
             padding: '20px',
             transition: 'flex 0.3s ease',
             minHeight: 'calc(100svh - 56px)',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '16px',
           }}
         >
           <BrainMap />
+          <div style={{ maxWidth: 600, width: '100%', margin: '0 auto' }}>
+            <DailyFact />
+          </div>
         </div>
 
         {/* InfoPanel — right side, shown when concept selected */}
