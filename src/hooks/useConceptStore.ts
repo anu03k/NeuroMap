@@ -27,6 +27,7 @@ interface ConceptStore {
   unlockConcept: (id: string) => void;
   markViewed: (id: string) => void;
   clearWalkTarget: () => void;
+  selectConceptAndWalk: (concept: Concept) => void;
   filteredConcepts: () => Concept[];
   getRelatedConcepts: (concept: Concept) => Concept[];
 }
@@ -93,6 +94,11 @@ export const useConceptStore = create<ConceptStore>((set, get) => ({
     })),
 
   clearWalkTarget: () => set({ pendingWalkTarget: null }),
+
+  selectConceptAndWalk: (concept) => {
+    set({ selectedConcept: concept, breadcrumbs: [], pendingWalkTarget: concept });
+    get().markViewed(concept.id);
+  },
 
   filteredConcepts: () => {
     const { concepts, activeCategory } = get();
